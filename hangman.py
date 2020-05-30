@@ -15,3 +15,7 @@ while tries >= 1:
     print(*player_letters, sep=", ")
     print(f"You have {tries} more guesses")
     letter = input("Please guess a letter: ").upper()
+
+    for i in range(len(word)):
+        if letter == word[i]:
+            word_list[i] = letter
