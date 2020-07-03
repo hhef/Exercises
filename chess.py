@@ -15,3 +15,21 @@ elif (col1 + row1) % 2 != 0 and (col2 + row2) % 2 != 0:
     print("YES")
 else:
     print("NO")
+
+"""
+In chess, the bishop moves diagonally, any number of squares. Given two different squares of the chessboard, determine 
+whether a bishop can go from the first to the second in one move.
+The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and 
+the column and row numbers of the ending square. The program should output YES if a Bishop can go from the first square 
+to the second in one move, or NO otherwise.
+"""
+
+col_from = int(input())
+row_from = int(input())
+col_to = int(input())
+row_to = int(input())
+
+if abs(col_from - col_to) == abs(row_from - row_to):
+    print("YES")
+else:
+    print("NO")
