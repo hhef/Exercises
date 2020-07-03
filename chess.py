@@ -1,3 +1,5 @@
+"""IF STATEMENTS"""
+
 """
 Given two cells of a chessboard. If they are painted in one color, print the word YES, and if in a different color - NO.
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for
@@ -50,6 +52,27 @@ row_to = int(input())
 if abs(col_from - col_to) == abs(row_from - row_to):
     print("YES")
 elif col_from == col_to or row_from == row_to:
+    print("YES")
+else:
+    print("NO")
+
+"""
+Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells 
+vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go 
+from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for 
+the first cell, and then the last two - for the second cell. The program should output YES if a knight can go from the 
+first cell to the second in one move, or NO otherwise.
+"""
+
+col_from = int(input())
+row_from = int(input())
+col_to = int(input())
+row_to = int(input())
+
+if abs(col_from - col_to) == 1 and abs(row_from - row_to) == 2:
+    print("YES")
+elif abs(col_from - col_to) == 2 and abs(row_from - row_to) == 1:
     print("YES")
 else:
     print("NO")
