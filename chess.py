@@ -33,3 +33,23 @@ if abs(col_from - col_to) == abs(row_from - row_to):
     print("YES")
 else:
     print("NO")
+
+"""
+Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the 
+chessboard, determine whether a queen can go from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for 
+the first cell, and then the last two - for the second cell. The program should output YES if a queen can go from the 
+first cell to the second in one move, or NO otherwise.
+"""
+
+col_from = int(input())
+row_from = int(input())
+col_to = int(input())
+row_to = int(input())
+
+if abs(col_from - col_to) == abs(row_from - row_to):
+    print("YES")
+elif col_from == col_to or row_from == row_to:
+    print("YES")
+else:
+    print("NO")
