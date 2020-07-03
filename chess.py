@@ -1,4 +1,4 @@
-"""IF STATEMENTS"""
+"""IF STATEMENTS from snakify.org"""
 
 """
 Given two cells of a chessboard. If they are painted in one color, print the word YES, and if in a different color - NO.
